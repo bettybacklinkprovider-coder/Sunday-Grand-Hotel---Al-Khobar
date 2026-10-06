@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
   Users, Maximize2, BedDouble, Check, Calendar, Phone, Filter, ShieldCheck, Clock
 } from 'lucide-react';
-import { ROOMS, HOTEL_INFO, Room } from '../data/hotelData';
+import { ROOMS, HOTEL_INFO, HOTEL_IMAGES, Room } from '../data/hotelData';
 import { useLanguage } from '../context/LanguageContext';
 
 interface RoomsProps {
@@ -25,7 +25,7 @@ export const Rooms: React.FC<RoomsProps> = ({ onOpenBookingModal, onOpenRoomDeta
       <section className="relative py-24 bg-[#0c0714] border-b border-[#D4AF37]/20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/executive_suite_luxury_1791273486355.jpg"
+            src={HOTEL_IMAGES.executive}
             alt="Sunday Grand Hotel Suites"
             className="w-full h-full object-cover opacity-25"
           />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
   Phone, MapPin, Mail, Clock, User, CheckCircle2, Copy, Send, Compass
 } from 'lucide-react';
-import { HOTEL_INFO, ROOMS } from '../data/hotelData';
+import { HOTEL_INFO, HOTEL_IMAGES, ROOMS } from '../data/hotelData';
 import { useLanguage } from '../context/LanguageContext';
 
 export const Contact: React.FC = () => {
@@ -54,7 +54,7 @@ export const Contact: React.FC = () => {
       <section className="relative py-24 bg-[#0c0714] border-b border-[#D4AF37]/20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_sunday_grand_hotel_1791273460849.jpg"
+            src={HOTEL_IMAGES.hero}
             alt="Sunday Grand Hotel Front View"
             className="w-full h-full object-cover opacity-20"
           />

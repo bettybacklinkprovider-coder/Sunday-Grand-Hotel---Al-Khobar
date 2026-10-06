@@ -4,7 +4,7 @@ import {
   Calendar, Phone, MapPin, ArrowRight, ShieldCheck, Star, Sparkles,
   Wifi, Clock, Bed, Utensils, Car, Wind, Headphones, CheckCircle2, ChevronRight
 } from 'lucide-react';
-import { HOTEL_INFO, ROOMS, AMENITIES, WHY_CHOOSE_US, Room } from '../data/hotelData';
+import { HOTEL_INFO, HOTEL_IMAGES, ROOMS, AMENITIES, WHY_CHOOSE_US, Room } from '../data/hotelData';
 import { useLanguage } from '../context/LanguageContext';
 
 interface HomeProps {
@@ -37,7 +37,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBookingModal, onOpenRoomDetail
         {/* Large luxury hotel background image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_sunday_grand_hotel_1791273460849.jpg"
+            src={HOTEL_IMAGES.hero}
             alt="Sunday Grand Hotel Al Khobar"
             className="w-full h-full object-cover scale-105 animate-subtleZoom"
           />
@@ -170,7 +170,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBookingModal, onOpenRoomDetail
             <div className="relative">
               <div className="relative z-10 rounded-xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
                 <img
-                  src="/src/assets/images/hotel_lobby_lounge_1791273515622.jpg"
+                  src={HOTEL_IMAGES.lobby}
                   alt="Sunday Grand Hotel Lobby Lounge"
                   className="w-full h-[400px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
                 />

@@ -1,3 +1,35 @@
+import deluxeRoomImg from '../assets/images/deluxe_room_luxury_1791273474772.jpg';
+import executiveSuiteImg from '../assets/images/executive_suite_luxury_1791273486355.jpg';
+import royalSuiteImg from '../assets/images/royal_suite_luxury_1791273495564.jpg';
+import heroImg from '../assets/images/hero_sunday_grand_hotel_1791273460849.jpg';
+import lobbyImg from '../assets/images/hotel_lobby_lounge_1791273515622.jpg';
+import diningImg from '../assets/images/luxury_hotel_dining_1791273505113.jpg';
+
+import amenityWifiImg from '../assets/images/amenity_wifi_lounge_1791275825334.jpg';
+import amenityReceptionImg from '../assets/images/amenity_reception_desk_1791275838430.jpg';
+import amenityComfortableImg from '../assets/images/amenity_comfortable_bedroom_1791275853382.jpg';
+import amenityRoomServiceImg from '../assets/images/amenity_room_service_1791275864692.jpg';
+import amenityParkingImg from '../assets/images/amenity_secure_parking_1791275875773.jpg';
+import amenityAcImg from '../assets/images/amenity_air_conditioning_1791275886760.jpg';
+import amenityFacilitiesImg from '../assets/images/amenity_facilities_1791275902121.jpg';
+import amenitySupportImg from '../assets/images/amenity_support_1791275915075.jpg';
+
+import whyComfortImg from '../assets/images/why_comfort_1791276271911.jpg';
+import whyHospitalityImg from '../assets/images/why_hospitality_1791276285107.jpg';
+import whyLocationImg from '../assets/images/why_location_1791276297809.jpg';
+import whyAtmosphereImg from '../assets/images/why_atmosphere_1791276321187.jpg';
+import whyCleaningImg from '../assets/images/why_cleaning_1791276331514.jpg';
+import whyServiceImg from '../assets/images/why_service_1791276340388.jpg';
+
+export const HOTEL_IMAGES = {
+  hero: heroImg,
+  lobby: lobbyImg,
+  dining: diningImg,
+  deluxe: deluxeRoomImg,
+  executive: executiveSuiteImg,
+  royal: royalSuiteImg,
+};
+
 export interface Room {
   id: string;
   name: string;
@@ -75,7 +107,7 @@ export const ROOMS: Room[] = [
     maxGuests: 2,
     bedType: "King Size Plush Pillowtop Bed",
     bedTypeAr: "سرير كينج فاخر بمرتبة طبية",
-    image: "/src/assets/images/deluxe_room_luxury_1791273474772.jpg",
+    image: deluxeRoomImg,
     description: "Designed for discerning business travelers and couples, our Deluxe Room pairs rich dark velvet tones with warm golden ambient illumination, high-speed Wi-Fi, and a spa-inspired marble bathroom.",
     descriptionAr: "صممت الغرفة الديلوكس لرجال الأعمال والأزواج الباحثين عن التميز، حيث تجمع بين لمسات المخمل الداكن والإضاءة الذهبية الدافئة، مع إنترنت فائق السرعة وحمام رخامي فاخر.",
     keyAmenities: ["Plush King Bed", "Smart 55\" 4K TV", "High-Speed Wi-Fi", "Rain Shower", "Mini Bar"],
@@ -119,7 +151,7 @@ export const ROOMS: Room[] = [
     maxGuests: 3,
     bedType: "Super King Bed + Daybed Lounge",
     bedTypeAr: "سرير سوبر كينج + جلسة إضافية",
-    image: "/src/assets/images/executive_suite_luxury_1791273486355.jpg",
+    image: executiveSuiteImg,
     description: "The Executive Room elevates stay comfort with an integrated lounge seating area, floor-to-ceiling windows overlooking Al Khobar, executive workspace, and VIP turn-down amenities.",
     descriptionAr: "ترتقي الغرفة التنفيذية بمستوى الإقامة بفضل منطقة الجلوس المتكاملة، ونوافذها الممتدة من الأرض إلى السقف المطلة على مدينة الخبر، ومكتب العمل المخصص، والمزايا الخاصة لكبار الشخصيات.",
     keyAmenities: ["Separate Lounge Area", "Super King Bed", "Executive Desk", "Nespresso Bar", "City Skyline View"],
@@ -163,7 +195,7 @@ export const ROOMS: Room[] = [
     maxGuests: 4,
     bedType: "Master Royal King Bed + Dining Lounge",
     bedTypeAr: "سرير ملكي رئيسي + صالة طعام مستقلة",
-    image: "/src/assets/images/royal_suite_luxury_1791273495564.jpg",
+    image: royalSuiteImg,
     description: "Immerse yourself in unrivaled elegance. Our Luxury Suite boasts a private dining parlor, master bedroom with crystal chandelier accents, deep marble soaking tub, and dedicated butler service.",
     descriptionAr: "انغمس في عالم من الأناقة الاستثنائية. يتميز الجناح الملكي الفاخر بوجود صالة طعام خاصة، وغرفة نوم رئيسية مزينة بلمسات الكريستال، وحوض استحمام رخامي كبير، وخدمة نادل خاص عند الطلب.",
     keyAmenities: ["Private Dining Parlor", "Dedicated Butler", "Marble Soaking Tub", "Walk-in Closet", "VIP Airport Transfer"],
@@ -207,7 +239,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Wifi",
     category: "Connectivity",
     categoryAr: "الاتصالات",
-    image: "/src/assets/images/amenity_wifi_lounge_1791275825334.jpg"
+    image: amenityWifiImg
   },
   {
     id: "reception",
@@ -218,7 +250,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Clock",
     category: "Services",
     categoryAr: "الخدمات",
-    image: "/src/assets/images/amenity_reception_desk_1791275838430.jpg"
+    image: amenityReceptionImg
   },
   {
     id: "comfortable-rooms",
@@ -229,7 +261,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Bed",
     category: "Comfort",
     categoryAr: "الراحة",
-    image: "/src/assets/images/amenity_comfortable_bedroom_1791275853382.jpg"
+    image: amenityComfortableImg
   },
   {
     id: "room-service",
@@ -240,7 +272,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Utensils",
     category: "Dining",
     categoryAr: "المطاعم والضيافة",
-    image: "/src/assets/images/amenity_room_service_1791275864692.jpg"
+    image: amenityRoomServiceImg
   },
   {
     id: "parking",
@@ -251,7 +283,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Car",
     category: "Facilities",
     categoryAr: "المرافق",
-    image: "/src/assets/images/amenity_secure_parking_1791275875773.jpg"
+    image: amenityParkingImg
   },
   {
     id: "air-conditioning",
@@ -262,7 +294,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Wind",
     category: "Comfort",
     categoryAr: "الراحة",
-    image: "/src/assets/images/amenity_air_conditioning_1791275886760.jpg"
+    image: amenityAcImg
   },
   {
     id: "modern-facilities",
@@ -273,7 +305,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Sparkles",
     category: "Facilities",
     categoryAr: "المرافق",
-    image: "/src/assets/images/amenity_facilities_1791275902121.jpg"
+    image: amenityFacilitiesImg
   },
   {
     id: "guest-support",
@@ -284,7 +316,7 @@ export const AMENITIES: Amenity[] = [
     iconName: "Headphones",
     category: "Services",
     categoryAr: "الخدمات",
-    image: "/src/assets/images/amenity_support_1791275915075.jpg"
+    image: amenitySupportImg
   }
 ];
 
@@ -297,7 +329,7 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "100%",
     statLabel: "RELAXATION GUARANTEED",
     statLabelAr: "ضمان الاسترخاء التام",
-    image: "/src/assets/images/why_comfort_1791276271911.jpg"
+    image: whyComfortImg
   },
   {
     title: "Excellent Hospitality",
@@ -307,7 +339,7 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "4.9/5",
     statLabel: "GUEST RATING",
     statLabelAr: "تقييم الضيوف",
-    image: "/src/assets/images/why_hospitality_1791276285107.jpg"
+    image: whyHospitalityImg
   },
   {
     title: "Convenient Location",
@@ -317,7 +349,7 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "10 Min",
     statLabel: "TO CORNICHE & MALLS",
     statLabelAr: "للكورنيش والمجمعات",
-    image: "/src/assets/images/why_location_1791276297809.jpg"
+    image: whyLocationImg
   },
   {
     title: "Elegant Atmosphere",
@@ -327,7 +359,7 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "5 Star",
     statLabel: "LUXURY AMBIANCE",
     statLabelAr: "فخامة 5 نجوم",
-    image: "/src/assets/images/why_atmosphere_1791276321187.jpg"
+    image: whyAtmosphereImg
   },
   {
     title: "Clean & Comfortable",
@@ -337,7 +369,7 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "24/7",
     statLabel: "HOUSEKEEPING",
     statLabelAr: "خدمة التنظيف والترتيب",
-    image: "/src/assets/images/why_cleaning_1791276331514.jpg"
+    image: whyCleaningImg
   },
   {
     title: "Professional Service",
@@ -347,48 +379,48 @@ export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
     stat: "100%",
     statLabel: "GUEST SATISFACTION",
     statLabelAr: "رضا النزلاء",
-    image: "/src/assets/images/why_service_1791276340388.jpg"
+    image: whyServiceImg
   }
 ];
 
 export const GALLERY_IMAGES = [
   {
-    src: "/src/assets/images/hero_sunday_grand_hotel_1791273460849.jpg",
+    src: heroImg,
     title: "Grand Facade at Dusk",
     titleAr: "واجهة الفندق الملكية عند الغروب",
     subtitle: "King Khalid Rd, Al Khobar",
     subtitleAr: "طريق الملك خالد، الخبر"
   },
   {
-    src: "/src/assets/images/hotel_lobby_lounge_1791273515622.jpg",
+    src: lobbyImg,
     title: "Opulent Lobby Lounge",
     titleAr: "صالة اللوبي الفاخرة",
     subtitle: "Marble floor & golden screen architecture",
     subtitleAr: "أرضيات رخامية وديكورات ذهبية راقية"
   },
   {
-    src: "/src/assets/images/luxury_hotel_dining_1791273505113.jpg",
+    src: diningImg,
     title: "Grand Fine Dining Restaurant",
     titleAr: "مطعم الفندق الرئيسي الفاخر",
     subtitle: "Culinary excellence & mood lighting",
     subtitleAr: "تميز في الطهي وإضاءة مريحة للأعصاب"
   },
   {
-    src: "/src/assets/images/royal_suite_luxury_1791273495564.jpg",
+    src: royalSuiteImg,
     title: "Luxury Royal Suite",
     titleAr: "الجناح الملكي الفاخر",
     subtitle: "Master suite with crystal chandeliers",
     subtitleAr: "غرفة نوم رئيسية مع نجف كريستال"
   },
   {
-    src: "/src/assets/images/executive_suite_luxury_1791273486355.jpg",
+    src: executiveSuiteImg,
     title: "Executive Suite Lounge",
     titleAr: "جلسة الغرفة التنفيذية",
     subtitle: "Panoramic Al Khobar views",
     subtitleAr: "إطلالة بانورامية على أفق الخبر"
   },
   {
-    src: "/src/assets/images/deluxe_room_luxury_1791273474772.jpg",
+    src: deluxeRoomImg,
     title: "Deluxe King Bedroom",
     titleAr: "غرفة ديلوكس كينج",
     subtitle: "Modern comfort & plush linens",

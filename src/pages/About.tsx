@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
   Sparkles, MapPin, Phone, Calendar, ArrowRight, Maximize2, Compass, Wifi, Clock, Bed, Utensils, Car, Wind, Headphones
 } from 'lucide-react';
-import { HOTEL_INFO, AMENITIES, GALLERY_IMAGES, NEARBY_ATTRACTIONS } from '../data/hotelData';
+import { HOTEL_INFO, HOTEL_IMAGES, AMENITIES, GALLERY_IMAGES, NEARBY_ATTRACTIONS } from '../data/hotelData';
 import { useLanguage } from '../context/LanguageContext';
 
 interface AboutProps {
@@ -34,7 +34,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBookingModal }) => {
       <section className="relative py-24 bg-[#0c0714] border-b border-[#D4AF37]/20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hotel_lobby_lounge_1791273515622.jpg"
+            src={HOTEL_IMAGES.lobby}
             alt="Sunday Grand Hotel Lobby"
             className="w-full h-full object-cover opacity-25"
           />
@@ -99,7 +99,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBookingModal }) => {
             {/* Fine Dining Spotlight Image */}
             <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl group">
               <img
-                src="/src/assets/images/luxury_hotel_dining_1791273505113.jpg"
+                src={HOTEL_IMAGES.dining}
                 alt="Sunday Grand Hotel Fine Dining Restaurant"
                 className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
