@@ -1,0 +1,6 @@
+{
+  "name": "Sunday Grand Hotel - Al Khobar",
+  "description": "Luxury hotel application for Sunday Grand Hotel in Al Khobar, Saudi Arabia featuring 4 separate pages, dark purple & golden luxury theme, and direct booking request.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
